@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html5网页</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
+	<!-- <script type="text/javascript" src="js/mf-pattern/mF_fancy.js"></script> --><!--引入风格js文件-->
+	<!-- <link href="js/mf-pattern/mF_fancy.css" type="text/css" /> --><!--引入风格css文件-->
+</head>
+<script type="text/javascript">
+	myFocus.set({
+	    id:'focus-box',//焦点图盒子ID
+	    pattern:'mF_fancy',//风格应用的名称
+	    time:3,//切换时间间隔(秒)
+	    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+	    width:1000,//设置图片区域宽度(像素)
+	    height:310,//设置图片区域高度(像素)
+	    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+	});
+</script>
+<body>
+<div id="main-wrapper">
+	<div id="top">
+		<i id="logo"></i>
+		<div>
+			<i id="phone"></i>
+			<span>24小时服务热线:</span>
+			<span>123-456-7890</span>
+		</div>
+	</div>
+	<div id="nav">
+		<nav>
+			<a href="#">首页</a>
+			<a href="#">关于慕课</a>
+			<a href="#">新闻动态</a>
+			<a href="#">课程中心</a>
+			<a href="#">在线课程</a>
+			<a href="#">人才招聘</a>
+		</nav>
+		<form id="search">
+			<input type="text" name="" id="search-input"/>
+			<button id="search-icon"></button>
+		</form>
+	</div>
+	<div id="focus-box"><!--焦点图盒子-->
+	  <div class="loading"><img src="images/loading.gif" alt="请稍候..." /></div><!--载入画面(可删除)-->
+	  <div class="pic"><!--内容列表(li数目可随意增减)-->
+	  	<ul>
+	        <li><a href="#"><img src="images/ad2.jpg" thumb="" alt="" text="详细描述1" /></a></li>
+	        <li><a href="#"><img src="images/ad3.jpg" thumb="" alt="" text="详细描述2" /></a></li>
+	        <li><a href="#"><img src="images/ad4.jpg" thumb="" alt="" text="详细描述3" /></a></li>
+	        <li><a href="#"><img src="images/ad3.jpg" thumb="" alt="" text="详细描述2" /></a></li>
+	  	</ul>
+	  </div>
+	</div>
+	<div id="main-content">
+		<div id="news-center">
+			<div class="th">
+				<span>新闻中心</span>
+				<span>More&gt;&gt;</span>
+			</div>
+			<div class="news-ad">
+				<img src="images/news.jpg"/>
+				<p>
+					<span>520慕女神喊你来表白</span><br/>
+					<span>活动时间：5月20日——5月25日</span><br/>
+					<span>获奖公布时间：5月26日</span><br/>
+					<span>Learn More&gt;&gt;</span>
+				</p>
+			</div>
+			<div class="news-list">
+				<ul>
+					<li><span>【慕客访谈 用户篇】“有为屌丝”在路上</span><span>2018-10-1</span></li>
+					<li><span>【有奖活动】给父亲的三行书信</span><span>2018-10-1</span></li>
+					<li><span>【程序猿，请晒出你的童年】活动获奖公告</span><span>2018-10-1</span></li>
+					<li><span>【慕客访谈】破茧成蝶——美女程序员的蜕变史</span><span>2018-10-1</span></li>
+				</ul>
+			</div>
+		</div>
+		<div id="course-center">
+			<div class="th">
+				<span>课程中心</span>
+				<span>More&gt;&gt;</span>
+			</div>
+			<div class="course-ad">
+				<img src="images/css.jpg" />
+				<p>
+					<span>CSS圆角进化论</span><br/>
+					CSS圆角的实现，经历了三大发展阶段：背
+					景图片方式、CSS2.0+HTML标签模拟、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。
+				</p>
+			</div>
+			<div class="course-language">
+				<ul>
+					<li>PHP开发</li>
+					<li>前端开发</li>
+					<li>JAVA开发</li>
+					<li>Android开发</li>
+				</ul>
+			</div>
+		</div>
+		<div id="media-center">
+			<div class="th">
+				<span>媒体聚焦</span>
+				<span>More&gt;&gt;</span>
+			</div>
+			<div class="video">
+				<embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" allowfullscreen="true" quality="high" width="220" height="140" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
+			</div>
+			<div class="media-ad"><img src="images/app.jpg"/></div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div>
+		<ul>
+				<li>关于</li>
+				<li>品牌故事</li>
+				<li>联系我们</li>
+				<li>加入我们</li>
+				<li>版权声明</li>
+		</ul>
+		<ul>
+				<li>课程</li>
+				<li>PHP开发</li>
+				<li>前端开发</li>
+				<li>JAVA开发</li>
+				<li>Android开发</li>
+		</ul>
+		<ul>
+				<li>关注</li>
+				<li>新浪微博</li>
+				<li>腾讯微博</li>
+				<li>企业微信</li>
+				<li>QQ空间</li>
+		</ul>
+		<ul>
+				<li><img src="images/weixin.png"/>微信关注</li>
+				<li><img width="120" src="images/author.jpg" /></li>
+		</ul>
+	</div>
+<!-- 	<ul>
+		<li>
+			<ul>
+				<li>关于</li>
+				<li>品牌故事</li>
+				<li>联系我们</li>
+				<li>加入我们</li>
+				<li>版权声明</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li>课程</li>
+				<li>PHP开发</li>
+				<li>前端开发</li>
+				<li>JAVA开发</li>
+				<li>Android开发</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li>关注</li>
+				<li>新浪微博</li>
+				<li>腾讯微博</li>
+				<li>企业微信</li>
+				<li>QQ空间</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li><img src="images/weixin.png"/>微信关注</li>
+				<li><img width="120" src="images/author.jpg" /></li>
+			</ul>
+		</li>
+	</ul> -->
+
+</footer>
+</body>
+</html>
